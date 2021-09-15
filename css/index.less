@@ -1,0 +1,449 @@
+//主题色定义
+@primary: #01495D;
+
+//背景色定义
+@bgColor: #F5F5F5;
+
+//字体大小定义
+// @phoneTitleSize: 16px;
+// @phoneSmallTitleSize: 15px;
+// @phoneTextSize: 14px;
+// @phoneSmallSize: 8px;
+@phoneTitleSize: 1.6rem;
+@phoneSmallTitleSize: 1.1rem;
+@phoneTextSize: 1rem;
+@phoneSmallSize: 0.8rem;
+//链接颜色定义
+@linkColor: #3268F1;
+
+//字体定义
+@font-face {
+    font-family: Arial-BoldMT;
+    src: url(./Arial-BoldMT.otf);
+}
+
+html,
+body {
+    color: #19172D;
+    // font-size: @phoneTextSize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+//头部区域
+.head {
+    width: 100%;
+    // height: 59px;
+    height: 5.9rem;
+    background: #01495D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2rem solid #CAB382;
+
+    // opacity: 0.12;
+    .logo {
+        width: 141px;
+        height: 18px;
+        margin-top: 2px;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 141px;
+            height: 18px;
+            cursor: pointer;
+        }
+    }
+}
+
+//底部区域
+.footer {
+    width: 100%;
+    // height: 86px;
+    height: 8.6rem;
+    background-color: #02364B;
+    padding: 2.2rem 0 3.5rem;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .links {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+
+            a {
+                color: #fff;
+                font-size: @phoneTextSize;
+                width: 25%;
+
+                &.about {
+                    text-align: start;
+                }
+
+                &.concat {
+                    text-align: center;
+                }
+
+                &.terms {
+                    text-align: end;
+                }
+            }
+        }
+
+        .copyright {
+            margin-top: 1.4rem;
+            color: #fff;
+            font-size: @phoneSmallSize;
+        }
+    }
+}
+
+//宽度布局容器
+.box-container {
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+}
+
+//首页中间区域
+.home-body {
+    background-color: #F5F5F5;
+    width: 100%;
+    min-height: calc(100vh - 14rem);
+    .body-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner {
+            width: 100%;
+            min-height: 209px;
+
+            img {
+                width: 100%;
+                height: 209px;
+            }
+        }
+
+        .body-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .store-logo {
+                width: 100px;
+                height: 30px;
+                margin: 19px 0 17px;
+
+                img {
+                    width: 100px;
+                    height: 30px;
+                }
+            }
+
+            .info-box {
+                padding-bottom: 18px;
+
+                &>h3 {
+                    text-align: center;
+                    font-size: @phoneSmallSize;
+                    color: #00384B;
+                }
+
+                .title {
+                    margin-bottom: 14px;
+                }
+
+                .box-con {
+                    width: 100%;
+                    min-height: 248px;
+                    background-color: #fff;
+                    box-shadow: 1px 0px 3px 0px rgba(28, 6, 1, 0.09);
+                    border-radius: 3px;
+                    padding: 2rem 0;
+                    .con-list {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        // padding:0  1rem;
+                        padding-left: 4.1rem;
+                        &+.con-list{
+                            margin-top: 4rem;
+                        }
+
+                        .list-img {
+                            width: 71px;
+                            height: 43px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                height: 43px;
+                                max-width: 100%;
+                            }
+                        }
+
+                        .list-info {
+                            margin-left: 1.6rem;
+
+                            h3 {
+                                font-size: @phoneSmallTitleSize;
+                                margin-bottom: .4rem;
+                            }
+
+                            ul {
+                                li {
+                                    font-size: @phoneTextSize;
+                                    padding-left: 16px;
+                                    margin-bottom: .2rem;
+                                    position: relative;
+                                    margin-bottom: .4rem;
+                                    &::after {
+                                        content: '';
+                                        background: url(../img/true.png) no-repeat;
+                                        position: absolute;
+                                        width: 12px;
+                                        height: 8px;
+                                        left: 0;
+                                        top: 2px;
+                                        background-size: contain;
+                                    }
+
+                                }
+                            }
+                        }
+                        &::after {
+                            content: "";
+                            width: 90%;
+                            height: 1px;
+                            bottom: -2rem;
+                            left: 5%;
+                            position: absolute;
+                            background: linear-gradient(90deg, #fff 0, #dcdcdc 29%, #dcdcdc 62%, #fff);
+                            background-size: contain;
+                        }
+                        &:last-child{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .info {
+                    margin-top: 19px;
+                }
+            }
+        }
+    }
+
+}
+
+//Terms&Conditions中间区域
+.tc-body {
+    // font-family: ArialMT;
+    background-color: @bgColor;
+    padding-bottom: 3.4rem;
+    min-height: calc(100vh - 14rem);
+    .article {
+        width: 100%;
+        justify-content: center;
+        padding-top: 16px;
+
+        .links {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            // margin-bottom: 18px;
+
+            a {
+                font-size: @phoneTextSize;
+                color: @linkColor;
+                text-decoration: underline;
+
+                &.privacyLink {
+                    margin-left: 41px;
+                }
+            }
+        }
+
+        .terms,
+        .privacy {
+            .title {
+                font-size: @phoneTitleSize;
+                font-weight: bold;
+                margin-bottom: 1.8rem;
+                padding-top: 1.8rem;
+            }
+
+            .content {
+                line-height: 2.3rem;
+
+                h3 {
+                    font-size: @phoneTextSize;
+                    font-weight: bold;
+                    // margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-size: @phoneSmallTitleSize;
+                    font-weight: bold;
+                    margin-top: .5rem;
+                    // margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: @phoneTextSize;
+                    // margin-bottom: 16px;
+                }
+
+                ul {
+
+                    margin-left: 18px;
+
+                    li {
+                        list-style-type: disc;
+                        list-style-position: outside;
+
+                        &::marker {
+                            margin-right: 2px;
+                        }
+
+                        ul {
+                            // padding-left: 20px;
+
+                            li {
+                                list-style-type: circle;
+                            }
+                        }
+                    }
+                }
+
+                .listStyle {
+                    display: flex;
+
+                    .right {
+                        li {
+                            list-style-type: circle;
+                        }
+
+                        text {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                a {
+                    color: @linkColor;
+                    text-decoration: underline;
+                }
+
+                .disc {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+    }
+}
+
+//about中间区域
+.about-body {
+    padding: 1.9rem 0 4rem 0;
+    background-color: @bgColor;
+    min-height: calc(100vh - 14rem);
+    .body-container {
+        font-size: @phoneTextSize;
+        line-height: 2.3rem;
+
+        p,
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        p {
+            .strong {
+                font-weight: bold;
+            }
+
+            .block {
+                display: block;
+            }
+        }
+    }
+}
+
+//concat中间区域
+.concat-body {
+    padding: 2rem 0 4.6rem 0;
+    background-color: @bgColor;
+    min-height: calc(100vh - 14rem);
+
+    .body-container {
+        .body-title {
+
+            h1,
+            h3 {
+                font-weight: bold;
+                font-size: @phoneTextSize;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .body-info {
+            padding-top: 3rem;
+
+            .info-box {
+                display: flex;
+
+                .img {
+                    width: 2.3rem;
+                    height: 1.7rem;
+                    padding-top: 0.2rem;
+
+                    img {
+                        width: 2.3rem;
+                        height: 1.7rem;
+                    }
+                }
+
+                .msg {
+                    font-size: @phoneTextSize;
+                    margin-left: 1.7rem;
+
+                    a {
+                        color: @linkColor;
+                    }
+
+                    p {
+                        margin-bottom: 0.2rem;
+                    }
+                }
+
+                &.box2 {
+                    margin: 2rem 0 1.2rem 0;
+                }
+            }
+        }
+    }
+}

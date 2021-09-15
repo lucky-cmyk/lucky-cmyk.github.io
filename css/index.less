@@ -82,25 +82,30 @@ div {
             display: flex;
             width: 100%;
             justify-content: space-around;
-
-
+            position: relative;
+            height:@phoneTextSize;
             a {
                 color: #fff;
                 font-size: @phoneTextSize;
-                width: 25%;
-
+                // width: 25%;
+                position: absolute;
                 &.about {
                     text-align: start;
+                    left: 0;
                 }
 
                 &.concat {
                     text-align: center;
+                    left: 50%;
+                    transform: translate(-50%);
                 }
 
                 &.terms {
                     text-align: end;
+                    right: 0;
                 }
             }
+          
         }
 
         .copyright {
@@ -123,6 +128,7 @@ div {
     background-color: #F5F5F5;
     width: 100%;
     min-height: calc(100vh - 14rem);
+
     .body-container {
         display: flex;
         flex-direction: column;
@@ -130,12 +136,10 @@ div {
 
         .banner {
             width: 100%;
-            min-height: 209px;
-
-            img {
-                width: 100%;
-                height: 209px;
-            }
+            // min-height: 209px;
+            height: 20.9rem;
+            background: url(../img/banner.jpg) no-repeat;
+            background-size: cover;
         }
 
         .body-content {
@@ -149,10 +153,17 @@ div {
                 height: 30px;
                 margin: 19px 0 17px;
 
-                img {
-                    width: 100px;
-                    height: 30px;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100px;
+                        height: 30px;
+                    }
                 }
+
             }
 
             .info-box {
@@ -175,13 +186,15 @@ div {
                     box-shadow: 1px 0px 3px 0px rgba(28, 6, 1, 0.09);
                     border-radius: 3px;
                     padding: 2rem 0;
+
                     .con-list {
                         display: flex;
                         align-items: center;
                         position: relative;
                         // padding:0  1rem;
                         padding-left: 4.1rem;
-                        &+.con-list{
+
+                        &+.con-list {
                             margin-top: 4rem;
                         }
 
@@ -213,6 +226,7 @@ div {
                                     margin-bottom: .2rem;
                                     position: relative;
                                     margin-bottom: .4rem;
+
                                     &::after {
                                         content: '';
                                         background: url(../img/true.png) no-repeat;
@@ -227,6 +241,7 @@ div {
                                 }
                             }
                         }
+
                         &::after {
                             content: "";
                             width: 90%;
@@ -237,8 +252,9 @@ div {
                             background: linear-gradient(90deg, #fff 0, #dcdcdc 29%, #dcdcdc 62%, #fff);
                             background-size: contain;
                         }
-                        &:last-child{
-                            &::after{
+
+                        &:last-child {
+                            &::after {
                                 display: none;
                             }
                         }
@@ -260,6 +276,7 @@ div {
     background-color: @bgColor;
     padding-bottom: 3.4rem;
     min-height: calc(100vh - 14rem);
+
     .article {
         width: 100%;
         justify-content: center;
@@ -368,6 +385,7 @@ div {
     padding: 1.9rem 0 4rem 0;
     background-color: @bgColor;
     min-height: calc(100vh - 14rem);
+
     .body-container {
         font-size: @phoneTextSize;
         line-height: 2.3rem;

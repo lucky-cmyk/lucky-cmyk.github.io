@@ -25,8 +25,8 @@
 
 html,
 body {
-    color: #19172D;
-    // color: #4f4f4f;
+    // color: #19172D;
+    color: #4f4f4f;
     font-size: @phoneTextSize;
     font-family: Arial, Helvetica, sans-serif;
     // font-family: ArialMT;
@@ -191,16 +191,16 @@ div {
                     background-color: #fff;
                     box-shadow: 1px 0px 3px 0px rgba(28, 6, 1, 0.09);
                     border-radius: 3px;
-                    padding: 2rem 0;
+                    // padding: 2rem 0;
 
                     .con-list {
                         position: relative;
                         // padding:0  1rem;
                         // padding:0 2.1rem;
-                        padding-left: 2.2rem;
+                        padding:1.4rem 2.2rem;
 
                         &+.con-list {
-                            margin-top: 4rem;
+                            // margin-top: 4rem;
                         }
 
                         .con-box {
@@ -228,7 +228,7 @@ div {
 
                                 h3 {
                                     font-size: @phoneSmallTitleSize;
-                                    margin-bottom: .4rem;
+                                    margin-bottom: .6rem;
                                     font-weight: bold;
                                     // font-family: Arial-BoldMT;
                                 }
@@ -239,7 +239,7 @@ div {
                                         padding-left: 15px;
                                         margin-bottom: .2rem;
                                         position: relative;
-                                        margin-bottom: .4rem;
+                                        margin-bottom: .5rem;
 
                                         &::after {
                                             content: '';
@@ -250,6 +250,9 @@ div {
                                             left: 1px;
                                             top: 2px;
                                             background-size: contain;
+                                        }
+                                        &:last-child{
+                                            margin-bottom: 0;
                                         }
 
                                     }
@@ -262,7 +265,7 @@ div {
                             content: "";
                             width: 90%;
                             height: 1px;
-                            bottom: -2rem;
+                            bottom: 0;
                             left: 5%;
                             position: absolute;
                             background: linear-gradient(90deg, #fff 0, #dcdcdc 29%, #dcdcdc 62%, #fff);

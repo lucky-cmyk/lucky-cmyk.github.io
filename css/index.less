@@ -5,14 +5,14 @@
 @bgColor: #F5F5F5;
 
 //字体大小定义
-// @phoneTitleSize: 16px;
-// @phoneSmallTitleSize: 15px;
-// @phoneTextSize: 14px;
-// @phoneSmallSize: 8px;
-@phoneTitleSize: 1.6rem;
-@phoneSmallTitleSize: 1.2rem;
-@phoneTextSize: 1.1rem;
-@phoneSmallSize: 1rem;
+@phoneTitleSize: 15.4px;
+@phoneSmallTitleSize: 14px;
+@phoneTextSize: 13px;
+@phoneSmallSize: 8px;
+// @phoneTitleSize: 1.5rem;
+// @phoneSmallTitleSize: 1.1rem;
+// @phoneTextSize: 1rem;
+// @phoneSmallSize: 0.8rem;
 //链接颜色定义
 @linkColor: #3268F1;
 
@@ -25,9 +25,11 @@
 
 html,
 body {
-    color: #19172D;
+    // color: #19172D;
+    color: #4f4f4f;
     // font-size: @phoneTextSize;
-    font-family: Arial, Helvetica, sans-serif;
+    // font-family: Arial, Helvetica, sans-serif;
+    font-family: ArialMT;
 }
 
 div {
@@ -228,19 +230,20 @@ div {
                                     font-size: @phoneSmallTitleSize;
                                     margin-bottom: .4rem;
                                     font-weight: bold;
+                                    font-family: Arial-BoldMT;
                                 }
 
                                 ul {
                                     li {
                                         font-size: @phoneTextSize;
-                                        padding-left: 16px;
+                                        padding-left: 15px;
                                         margin-bottom: .2rem;
                                         position: relative;
                                         margin-bottom: .4rem;
 
                                         &::after {
                                             content: '';
-                                            background: url(../img/true.png) no-repeat;
+                                            background: url(../img/true1.png) no-repeat;
                                             position: absolute;
                                             width: 12px;
                                             height: 8px;
@@ -318,6 +321,7 @@ div {
             .title {
                 font-size: @phoneTitleSize;
                 font-weight: bold;
+                font-family: Arial-BoldMT;
                 margin-bottom: 1.8rem;
                 padding-top: 1.8rem;
             }
@@ -328,12 +332,14 @@ div {
                 h3 {
                     font-size: @phoneTextSize;
                     font-weight: bold;
+                    font-family: Arial-BoldMT;
                     // margin-bottom: 16px;
                 }
 
                 h2 {
                     font-size: @phoneSmallTitleSize;
                     font-weight: bold;
+                    font-family: Arial-BoldMT;
                     margin-top: .5rem;
                     // margin-bottom: 16px;
                 }
@@ -391,6 +397,7 @@ div {
 
                         text {
                             font-weight: bold;
+                            font-family: Arial-BoldMT;
                         }
                     }
                 }
@@ -426,11 +433,13 @@ div {
 
         h3 {
             font-weight: bold;
+            font-family: Arial-BoldMT;
         }
 
         p {
             .strong {
                 font-weight: bold;
+                font-family: Arial-BoldMT;
             }
 
             .block {
@@ -452,6 +461,7 @@ div {
             h1,
             h3 {
                 font-weight: bold;
+                font-family: Arial-BoldMT;
                 font-size: @phoneTextSize;
                 margin-bottom: 2rem;
             }

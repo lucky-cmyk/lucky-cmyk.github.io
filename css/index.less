@@ -62,7 +62,7 @@ div {
         img {
             width: 141px;
             height: 18px;
-            cursor: pointer;
+            // cursor: pointer;
         }
     }
 }
@@ -82,39 +82,42 @@ div {
         width: 100%;
 
         .links {
-            display: flex;
+            // display: flex;
             width: 100%;
             justify-content: space-around;
             position: relative;
             height: @phoneTextSize;
-
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
             a {
                 color: #fff;
                 font-size: @phoneTextSize;
+                white-space: nowrap;
+                text-align: center;
                 // width: 25%;
-                position: absolute;
+                // position: absolute;
 
                 &.about {
-                    text-align: start;
-                    left: 0;
+                    // text-align: start;
+                    // left: 0;
                 }
 
                 &.concat {
-                    text-align: center;
-                    left: 50%;
-                    transform: translate(-50%);
+                    // text-align: center;
+                    // left: 50%;
+                    // transform: translate(-50%);
                 }
 
                 &.terms {
-                    text-align: end;
-                    right: 0;
+                    // text-align: end;
+                    // right: 0;
                 }
             }
 
         }
 
         .copyright {
-            margin-top: 1.4rem;
+            margin-top: 1.7rem;
             color: #fff;
             font-size: @phoneSmallSize;
         }
@@ -230,7 +233,7 @@ div {
                                     font-size: @phoneSmallTitleSize;
                                     margin-bottom: .6rem;
                                     font-weight: bold;
-                                    // font-family: Arial-BoldMT;
+                                    font-family: Arial-BoldMT;
                                 }
 
                                 ul {
@@ -324,7 +327,7 @@ div {
             .title {
                 font-size: @phoneTitleSize;
                 font-weight: bold;
-                // font-family: Arial-BoldMT;
+                font-family: Arial-BoldMT;
                 margin-bottom: 1.8rem;
                 padding-top: 1.8rem;
             }
@@ -335,14 +338,14 @@ div {
                 h3 {
                     font-size: @phoneTextSize;
                     font-weight: bold;
-                    // font-family: Arial-BoldMT;
+                    font-family: Arial-BoldMT;
                     // margin-bottom: 16px;
                 }
 
                 h2 {
                     font-size: @phoneSmallTitleSize;
                     font-weight: bold;
-                    // font-family: Arial-BoldMT;
+                    font-family: Arial-BoldMT;
                     margin-top: .5rem;
                     // margin-bottom: 16px;
                 }
@@ -400,7 +403,7 @@ div {
 
                         text {
                             font-weight: bold;
-                            // font-family: Arial-BoldMT;
+                            font-family: Arial-BoldMT;
                         }
                     }
                 }
@@ -436,13 +439,13 @@ div {
 
         h3 {
             font-weight: bold;
-            // font-family: Arial-BoldMT;
+            font-family: Arial-BoldMT;
         }
 
         p {
             .strong {
                 font-weight: bold;
-                // font-family: Arial-BoldMT;
+                font-family: Arial-BoldMT;
             }
 
             .block {
@@ -464,7 +467,7 @@ div {
             h1,
             h3 {
                 font-weight: bold;
-                // font-family: Arial-BoldMT;
+                font-family: Arial-BoldMT;
                 font-size: @phoneTextSize;
                 margin-bottom: 2rem;
             }

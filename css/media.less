@@ -6,8 +6,8 @@
                 ul{
                     li{
                         &::after{
-                            width: 10px;
-                            height: 6px;
+                            width: 10px !important;
+                            height: 6px!important;
                         }
                     }
                 }
@@ -87,7 +87,20 @@
 @media screen and (min-width: 640px) {
     html,body {
         font-size:13px;
+        .home-body{
+            .list-info {
+                ul{
+                    li{
+                        &::after{
+                            width: 12px !important;
+                            height: 8px!important;
+                        }
+                    }
+                }
+            }
+        }
     }
+  
 }
 
 

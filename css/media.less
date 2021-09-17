@@ -1,19 +1,22 @@
 @media screen and (min-width: 320px) {
-    html,body {
-        font-size: 10px ;
-        .home-body{
+
+    html,
+    body {
+        font-size: 10px;
+
+        .home-body {
             .list-info {
-                ul{
-                    li{
-                        &::after{
+                ul {
+                    li {
+                        &::after {
                             width: 10px !important;
-                            height: 6px!important;
+                            height: 6px !important;
                         }
                     }
                 }
             }
         }
-        
+
     }
 }
 
@@ -24,7 +27,9 @@
 //   }
 
 @media screen and (min-width: 375px) {
-    html,body {
+
+    html,
+    body {
         font-size: 10px;
     }
 }
@@ -32,12 +37,15 @@
 
 
 @media screen and (min-width: 411px) {
-    html,body {
+
+    html,
+    body {
         font-size: 11.3px;
-        .home-body{
-            .box-con{
-                .con-list{
-                    padding-left:  5.1rem !important;
+
+        .home-body {
+            .box-con {
+                .con-list {
+                    padding-left: 5.1rem !important;
                 }
             }
         }
@@ -47,35 +55,43 @@
 
 
 @media screen and (min-width: 448px) {
-    html,body {
-        font-size:12px;
+
+    html,
+    body {
+        font-size: 12px;
     }
 }
 
 
 
 @media screen and (min-width: 512px) {
-    html,body {
+
+    html,
+    body {
         font-size: 12.3px;
-        
+
     }
-    .home-body{
-        .banner{
+
+    .home-body {
+        .banner {
             background-image: url(../img/bannerPC.png) !important;
         }
     }
- 
+
 }
 
 
 
 @media screen and (min-width: 576px) {
-    html,body {
+
+    html,
+    body {
         font-size: 13.3px;
-        .home-body{
-            .box-con{
-                .con-list{
-                    padding-left:  8.6rem !important;
+
+        .home-body {
+            .box-con {
+                .con-list {
+                    padding-left: 8.6rem !important;
                 }
             }
         }
@@ -85,36 +101,318 @@
 
 
 @media screen and (min-width: 640px) {
-    html,body {
-        font-size:14px;
-        .home-body{
+
+    html,
+    body {
+        font-size: 14px;
+
+        .home-body {
             .list-info {
-                ul{
-                    li{
-                        &::after{
+                ul {
+                    li {
+                        &::after {
                             width: 12px !important;
-                            height: 8px!important;
+                            height: 8px !important;
                         }
                     }
                 }
             }
         }
     }
-  
+
 }
 
 
 
 @media screen and (min-width: 768px) {
-    html,body {
+
+    html,
+    body {
         font-size: 14.3px;
-      
+        .concat-body{
+            .contactBox {
+                width: 100%;
+                .contactContent {
+                    display: flex;
+                    .contactHeader {
+                        height: 2.54rem;
+                        background-color: #01495D;
+                        border-top-right-radius: 15px;
+                        border-top-left-radius: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 27%;
+                        min-width: 270px;
+                        height: auto;
+                        margin-right: 35.2px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 15px;
+        
+        
+                        .left {
+                            margin-top: 88px;
+                            padding: 0 32.8px;
+        
+                            .name {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                align-items: flex-start;
+        
+                                span {
+                                    margin-left: 0;
+                                    margin-top: 24px;
+                                    font-size: 27.2px;
+                                    font-family: Arial-BoldMT;
+                                    color: #ffffff;
+                                }
+        
+                                img {
+        
+                                    width: 71.2px;
+                                    height: 56px;
+                                }
+                            }
+        
+                            .hint {
+                                margin: 30px 0 50px;
+                                font-size: 16px;
+                                font-family: Arial-BoldMT;
+                                color: #ffffff;
+                            }
+        
+                            .email {
+                                font-family: ArialMT;
+                                font-size: 16px;
+                                color: #ffffff;
+                            }
+                        }
+        
+                        .right {
+                            img {
+                                width: 199px;
+                                height: 208px;
+                            }
+        
+                            .pokerPc {
+                                display: block;
+                                margin-top: 80px;
+                            }
+        
+                            .poker {
+                                display: none;
+                            }
+                        }
+                    }
+        
+                    .form {
+                        flex: 1;
+                        padding-top: 0.13rem;
+        
+                        p {
+                            font-size: 0;
+        
+                            &.name {
+                                font-size: 19px;
+                                font-family: Arial-BoldMT;
+                                color: #626262;
+                                margin: 21px 0 13px;
+        
+                                &.captcha {
+                                    display: flex;
+                                    align-items: center;
+        
+                                    #canvas {
+                                        margin-left: 10px;
+                                    }
+                                }
+        
+                                span {
+                                    color: #ff0000;
+                                }
+                            }
+                        }
+        
+                        input {
+                            width: 100%;
+                            box-sizing: border-box;
+                            border: solid 2px #afafaf;
+                            font-family: ArialMT;
+                            color: #626262;
+                            padding-left: 24.6px;
+                            height: 48px;
+                            font-size: 16px;
+        
+                            &::-webkit-input-placeholder {
+                                color: #6f787f;
+                            }
+        
+                            &::-moz-placeholder {
+                                color: #6f787f;
+                            }
+        
+                            &:-moz-placeholder {
+                                color: #6f787f;
+                            }
+        
+                            &:-ms-input-placeholder {
+                                color: #6f787f;
+                            }
+        
+                        }
+        
+                        .pc {
+                            display: flex;
+                            justify-content: space-between;
+        
+                            .item {
+                                width: 45%;
+        
+                            }
+                        }
+        
+        
+                        textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            border: solid 2px #afafaf;
+                            resize: none;
+                            font-size: 0.33rem;
+                            font-family: ArialMT;
+                            color: #626262;
+                            padding: 24.6px;
+                            font-size: 20px;
+                            height: 264px;
+                        }
+                    }
+        
+                    .submit {
+                        letter-spacing: 7px;
+                        font-size: 26px;
+                        width: 176px;
+                        height: 75px;
+                        background-color: #eaae5d;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        cursor: pointer;
+                        margin-top: 24px;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    }
+                }
+        
+            }
+        }
+     
     }
 }
 
 
 @media screen and (min-width: 1024px) {
-    html,body {
+
+    html,
+    body {
         font-size: 15px;
     }
 }
+
+
+
+
+
+// @media only screen and (min-width: 320px) and (max-width: 359px) {
+//     html,
+//     body {
+//       font-size: 42.67px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 360px) and (max-width: 374px) {
+//     html,
+//     body {
+//       font-size: 48px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 375px) and (max-width: 385px) {
+//     html,
+//     body {
+//       font-size: 50px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 386px) and (max-width: 392px) {
+//     html,
+//     body {
+//       font-size: 51.47px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 393px) and (max-width: 400px) {
+//     html,
+//     body {
+//       font-size: 52.4px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 401px) and (max-width: 414px) {
+//     html,
+//     body {
+//       font-size: 53.47px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 415px) and (max-width: 479px) {
+//     html,
+//     body {
+//       font-size: 55.33px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 480px) and (max-width: 559px) {
+//     html,
+//     body {
+//       font-size: 64px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 560px) and (max-width: 599px) {
+//     html,
+//     body {
+//       font-size: 74.67px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 600px) and (max-width: 749px) {
+//     html,
+//     body {
+//       font-size: 80px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 750px) and (max-width: 767px) {
+//     html,
+//     body {
+//       font-size: 100px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 768px) and (max-width: 969px) {
+//     html,
+//     body {
+//       font-size: 102.4px;
+//     }
+//   }
+  
+//   @media only screen and (min-width: 970px) {
+//     html,
+//     body {
+//       /* font-size: 129.33px; */
+//       font-size: 110px;
+//     }
+//   }
+  

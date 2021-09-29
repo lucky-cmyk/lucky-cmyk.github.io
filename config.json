@@ -1,5 +1,0 @@
-{
-  "REACT_APP_BASE_URL": "http://192.168.1.180:8999/admin/",
-  "REACT_APP_CDN_URL": "http://127.0.0.1:8999/images",
-  "REACT_APP_S3_SERVER_ENABLE": false
-}

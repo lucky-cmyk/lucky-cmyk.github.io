@@ -230,7 +230,7 @@ h6 {
 header {
   width: 100%;
   height: 1rem;
-  background: #531009;
+  background: #0C1624;
   border-bottom: 0.08rem solid #D9AD10;
 }
 
@@ -612,7 +612,7 @@ header {
 /* footer */
 footer {
   width: 100%;
-  background-color: #531009;
+  background-color: #0C1624;
 }
 
 .quickLinksBox {
@@ -916,7 +916,7 @@ footer {
 
 .aboutUsTitle {
   height: 0.66rem;
-  background-color: #A31D03;
+  background-color: #1B2F54;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1027,7 +1027,7 @@ footer {
 
 .contactBox .contactHeader {
   height: 2.54rem;
-  background-color: #A31D03;
+  background-color: #1B2F54;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   display: flex;
@@ -1175,7 +1175,7 @@ footer {
 
 .howToPlayHeader {
   height: 0.66rem;
-  background-color: #A31D03;
+  background-color: #1B2F54;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1494,7 +1494,7 @@ footer {
 
 .homeItem .headerBox {
   height: 0.68rem;
-  background-color: #A31D03;
+  background-color: #1B2F54;
   display: flex;
   align-items: center;
   justify-content: space-around;

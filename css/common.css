@@ -235,12 +235,12 @@ header {
 }
 
 .headerContent .logoBox {
-  height: 0.56rem;
+  height: 0.86rem;
   text-align: center;
 }
 
 .headerContent .logoBox img {
-  height: 0.56rem;
+  height: 0.86rem;
   vertical-align: top;
 }
 
@@ -332,7 +332,7 @@ header {
 
   footer .quickLinksBoxPc {
     display: block;
-    padding: 0.5rem 0 0.16rem;
+    padding: 0.2rem 0 0.16rem;
   }
 
   footer .quickLinksBoxPc .footerContent .infoBoxs h3 {
@@ -407,7 +407,7 @@ header {
 
   footer .quickLinksBoxPc .logoBoxsPc .logoName {
     /* width: 2.2rem; */
-    height: 0.56rem;
+    height: 1.3rem;
   }
 
   .aboutUsContentBoxs {

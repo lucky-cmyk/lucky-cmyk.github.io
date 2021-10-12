@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Notfound/index.js"],"names":["Index","props"],"mappings":"+GAAA,wBAQeA,UANf,SAAeC,GACb,OACE","file":"static/js/6.ea60cf20.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nfunction Index(props) {\r\n  return (\r\n    <div>404</div>\r\n  );\r\n}\r\n\r\nexport default Index;\r\n"],"sourceRoot":""}

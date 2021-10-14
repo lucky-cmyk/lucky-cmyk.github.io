@@ -1,2 +1,0 @@
-(this.webpackJsonpstardust_web=this.webpackJsonpstardust_web||[]).push([[6],{1309:function(t,s,e){"use strict";e.r(s);e(0);var n=e(10);s.default=function(t){return Object(n.jsx)("div",{children:"404"})}}}]);
-//# sourceMappingURL=6.ea60cf20.chunk.js.map

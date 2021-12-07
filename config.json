@@ -1,0 +1,5 @@
+{
+  "REACT_APP_BASE_URL": "https://api.game.sit.ourmz.cn/gentle/rice/admin/",
+  "REACT_APP_CDN_URL": "http://127.0.0.1:8999/images",
+  "REACT_APP_S3_SERVER_ENABLE": true
+}
